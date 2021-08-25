@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    items
+
+  ],
+  "result": {
+    "item": "modid:thing"
+  }
+}

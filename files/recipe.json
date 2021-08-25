@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    ready_pattern
+  ],
+  "key": {
+    ready_keys
+
+  },
+  "result": {
+    "item": "modid:thing"
+  }
+}
