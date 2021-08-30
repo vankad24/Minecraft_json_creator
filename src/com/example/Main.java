@@ -16,9 +16,9 @@ public class Main {
     String version = "1.15.2";
     public static void main(String[] args) {
 
-        path = "G:\\Projects\\ideaProjects\\Magnum-magic\\src\\main\\resources";
-        modid = "magmagic";
-        name = "magic_stone_block";
+        path = "";
+        modid = "";
+        name = "";
 
 
 
@@ -55,7 +55,10 @@ public class Main {
 
         new File(assets,"lang").mkdir();
         System.out.println("And add to your lang file");
-        System.out.println((isBlock?"\"block.":"\"item.")+modid+"."+name+"\":\""+name.replace("_"," ")+"\"");
+        String formattedName = "";
+        for(String word:name.split("_"))
+            formattedName+=Character.toUpperCase(word.charAt(0))+word.substring(1)+" ";
+        System.out.println((isBlock?"\"block.":"\"item.")+modid+"."+name+"\":\""+formattedName.trim()+"\"");
         //        "block.magmagic.lampblock": "Lamp Block"
         System.out.println("Good luck!");
     }
